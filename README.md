@@ -4,10 +4,10 @@
 
 ## Installation
 
-- get package 
+- get package
 
 ```
-go get https://github.com/wei-zero/amadeus
+go get https://github.com/toddheslin/amadeus
 ```
 
 ### Flight order creation
@@ -54,7 +54,6 @@ go get https://github.com/wei-zero/amadeus
 ```
 
 - check pricing for first option in offers response
-
 
 ```
     // get pricing request&response
@@ -113,81 +112,80 @@ go get https://github.com/wei-zero/amadeus
 
 ```
 
-
 ## Coverage
 
 ### Authentification
 
- * POST /v1/security/oauth2/token
- * GET  /v1/security/oauth2/token/{token}
+- POST /v1/security/oauth2/token
+- GET /v1/security/oauth2/token/{token}
 
 ### AIR
 
 #### Search & Shooping
 
- * GET  /v2/shopping/flight-offers
- * POST /v2/shopping/flight-offers
+- GET /v2/shopping/flight-offers
+- POST /v2/shopping/flight-offers
 
- * GET  /v1/shopping/flight-destinations
- * GET  /v1/shopping/flight-dates
+- GET /v1/shopping/flight-destinations
+- GET /v1/shopping/flight-dates
 
- * POST /v1/shopping/flight-offers/pricing
+- POST /v1/shopping/flight-offers/pricing
 
- * GET  /v1/shopping/seatmaps
- * POST /v1/shopping/seatmaps
+- GET /v1/shopping/seatmaps
+- POST /v1/shopping/seatmaps
 
 #### Booking
 
- * POST /v1/booking/flight-orders
- * GET  /v1/booking/flight-orders/{orderID}
- 
+- POST /v1/booking/flight-orders
+- GET /v1/booking/flight-orders/{orderID}
+
 #### Travel Insights
 
- * GET /v1/travel/analytics/air-traffic/traveled
- * GET /v1/travel/analytics/air-traffic/booked
- * GET /v1/travel/analytics/air-traffic/busiest-period
+- GET /v1/travel/analytics/air-traffic/traveled
+- GET /v1/travel/analytics/air-traffic/booked
+- GET /v1/travel/analytics/air-traffic/busiest-period
 
 #### Utilities
 
- * GET /v1/reference-data/locations/airports
- * GET /v1/reference-data/locations
- * GET /v1/reference-data/locations/{id}
+- GET /v1/reference-data/locations/airports
+- GET /v1/reference-data/locations
+- GET /v1/reference-data/locations/{id}
 
- * GET /v2/reference-data/urls/checkin-links
- * GET /v1/reference-data/airlines
+- GET /v2/reference-data/urls/checkin-links
+- GET /v1/reference-data/airlines
 
 #### Artificial Inteligence
 
- * GET  /v1/airport/predictions/on-time
+- GET /v1/airport/predictions/on-time
 
 ### Hotel
 
 #### Search & Shooping
 
- * GET /v2/shopping/hotel-offers
- * GET /v2/shopping/hotel-offers/by-hotel
- * GET /v2/shopping/hotel-offers/{id}
+- GET /v2/shopping/hotel-offers
+- GET /v2/shopping/hotel-offers/by-hotel
+- GET /v2/shopping/hotel-offers/{id}
 
 #### Travel Insights
 
- * GET /v2/e-reputation/hotel-sentiments
+- GET /v2/e-reputation/hotel-sentiments
 
 #### Booking
 
- * POST /v1/booking/hotel-bookings
+- POST /v1/booking/hotel-bookings
 
 ### Destination content
 
 #### Location
 
- * GET /v1/reference-data/locations/pois
+- GET /v1/reference-data/locations/pois
 
 ### Trip
 
 #### Artificial Inteligence
 
- * GET  /v1/travel/predictions/trip-purpose
- * GET /v2/media/files/generated-photos
+- GET /v1/travel/predictions/trip-purpose
+- GET /v2/media/files/generated-photos
 
 ## Missing endpoints
 
@@ -195,13 +193,13 @@ go get https://github.com/wei-zero/amadeus
 
 #### Artificial Inteligence
 
- * POST /v1/shopping/flight-offers/prediction
- * GET  /v1/travel/predictions/flight-delay
+- POST /v1/shopping/flight-offers/prediction
+- GET /v1/travel/predictions/flight-delay
 
 ### Trip
 
 #### Utilities
 
- * POST /v2/travel/trip-parser-jobs
- * GET  /v2/travel/trip-parser-jobs/{{jobId}}
- * GET  /v2/travel/trip-parser-jobs/{{jobId}}/result
+- POST /v2/travel/trip-parser-jobs
+- GET /v2/travel/trip-parser-jobs/{{jobId}}
+- GET /v2/travel/trip-parser-jobs/{{jobId}}/result
